@@ -1,0 +1,105 @@
+.c-container{
+    justify-content: space-between;
+    
+}
+
+.c-container>div{
+    flex: 1;
+}
+
+
+.c-left{
+    gap: 0.5rem;
+}
+
+
+.contactModes{
+    margin-top: 2rem;
+     gap: 1rem;
+}
+
+.contactModes .row{
+
+    gap: 1.5rem;
+    
+}
+
+
+.mode{
+    
+    width: 16rem;
+    padding: 1rem;
+    border: 0.8px solid rgba(128, 128, 128, 0.143);
+     gap:1rem;
+     transition:all 300ms ease-in;
+     
+}
+
+.mode .button{
+    width: 100%;
+    text-align: center;
+    background: var(--lightBlue);
+    color: var(--blue);
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+.mode>:nth-child(1){
+    width: 100%;
+    gap: 8.6 rem;
+    
+}
+
+.mode .detail{
+margin: 1rem;
+}
+
+
+.mode .detail .primaryText{
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.mode .detail .secondaryText{
+    font-size: 0.8rem;
+    font-weight: 500;
+    width: 100%;
+}
+
+
+.mode:hover{
+    scale: 1.1;
+    box-shadow: var(--shadow);
+border-radius: 6px;
+}
+
+.mode .button:hover{
+    background: var(--blue-gradient);
+    color: white;
+    scale:0.8;
+}
+
+
+@media (max-width:1024px) {
+    
+
+    .c-container{
+        flex-direction: column;
+    }
+
+    .c-right{
+        justify-content: center;
+    }
+    .contactModes{
+        width:100% ;
+    }
+    .row{
+
+        flex-direction: column;
+        width: 100%;
+
+    }
+    .mode{
+        width: 100%;
+    }
+}
+

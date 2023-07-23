@@ -1,0 +1,108 @@
+ .f-conatiner{
+
+
+    justify-content: space-around;
+ }
+
+.f-left{
+    gap: 0.2rem;
+}
+
+
+
+ /* ---------   Credit----------------/*
+
+ /* Footer container styles */
+.footer-container {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #333;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+/* Credit text styles */
+.credit {
+  font-size: 1.2rem;
+  font-weight: 600;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  
+  animation: colorChange 2s infinite alternate; /* Animation for color change */
+}
+
+/* CSS Animation for color change */
+@keyframes colorChange {
+  from {
+    color: #ff0000;
+  } /* Starting color (red) */
+  to {
+    color: #0000ff;
+  } /* Ending color (blue) */
+}
+
+
+
+
+
+
+/* Footer container styles */
+.f-wrapper {
+  padding: 20px;
+  background-color: var(#333);
+  
+}
+
+
+
+.credit span {
+  transition: color 0.5s; /* Transition effect for color change */
+}
+
+
+.title-row{
+
+  font-size: 2.4rem;
+  background: -webkit-linear-gradient(orange, yellow);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+}
+
+
+
+
+
+@media (max-width: 768px) {
+    .f-conatiner {
+      
+      justify-content: center;
+    }
+  
+    .f-conatiner > div {
+      align-items: center!important;
+      text-align: center;
+    }
+  
+    .credit {
+      font-size: 1rem;
+      flex-direction: column;
+      background: var(--white);
+      
+     
+      position: static;
+    }
+
+
+    .f-left h1{
+      font-size: 1.8rem;
+      align-items: center;
+    }
+    
+  
+    /* Add any additional mobile-specific styles here */
+  }
